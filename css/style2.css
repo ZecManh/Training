@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Header */
+header {
+    width: 100%;
+    background-color: #1D2A35;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* nav left */
+.nav-left-logo {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo:hover i {
+    color: white;
+}
+
+.logo i {
+    color: green;
+}
+
+.list-nav-left {
+    display: flex;
+    list-style-type: none;
+}
+
+.list-nav-left li {
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+}
+
+.list-nav-left li:hover {
+    background-color: #04AA6D;
+}
+
+.list-nav-left li a {
+    color: #dddddd;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.list-nav-left li i {
+    padding: 0 5px;
+}
+
+/* nav-right */
+.nav-right {
+    display: flex;
+    padding: 20px 0px;
+}
+
+.list-nav-right {
+    display: flex;
+    list-style-type: none;
+}
+
+.list-nav-right li {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.list-nav-right li:hover {
+    background-color: #04AA6D;
+
+}
+
+.list-nav-right li a {
+    color: #dddddd;
+    text-decoration: none;
+}
+
+.list-nav-right li i {
+    color: purple;
+    padding: 0 8px;
+}
+
+.btn {
+    margin: 0 30px;
+    /* background-color: #D9EEE1; */
+}
+
+.btn a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #D9EEE1;
+}
+
+a.btn_login {
+    color: white;
+}
+
+.section-2 {}
+
+.list-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.box1 {
+    width: calc(100%/3 - 40px);
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.box1 img {
+    width: 100%;
+
+}
+
+.menu {
+    display: none;
+    padding: 20px 0px;
+    list-style-type: none;
+}
+
+@media(max-width:800px) {
+    .nav-right {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .list-nav-left {
+        display: none;
+    }
+
+    .box1 {
+        width: 30%;
+
+    }
+}
